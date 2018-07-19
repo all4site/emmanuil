@@ -1,0 +1,130 @@
+.video
+	height: 90vh
+
+.textAboutUs
+	i
+		display: block
+		margin-bottom: 20px
+
+.projectaccordeon
+	margin-top: 50px
+	color: $black
+
+	.collapsible-header
+		display: grid
+		background: $base
+		color: $white
+		justify-content: center
+		border-bottom: 1px solid $accent
+
+	.collapsible-body
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-column-gap: 50px
+		grid-row-gap: 50px
+
+	.img
+		max-height: 380px
+		overflow: hidden
+
+		img
+			width: 100%
+			height: auto
+
+.donate
+	background: url("../img/bgdonate1.jpg")
+	min-height: 300px
+	background-position: center
+	background-size: cover
+	position: relative
+	overflow: hidden
+	margin-top: 50px
+
+	&::after
+		content: ""
+		background: url("../img/bgdonate1.jpg")
+		width: 100%
+		height: 100%
+		position: absolute
+		background-position: center
+		background-size: cover
+		filter: blur(3px)
+		transform: scale(1.01)
+
+	.btn-large
+		justify-self: center
+		align-self: center
+		z-index: 1
+
+.doingBlockWrapper
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	grid-column-gap: 20px
+	margin-top: 50px
+
+	.doingBlock
+		display: grid
+		background: $base
+		grid-template-columns: 1fr
+		grid-template-rows: min-content 1fr
+		align-items: center
+
+		.counter
+			display: grid
+			color: $counter
+			font-size: 2rem
+			background: fade-out($white, 0.8)
+			width: 100%
+			text-align: center
+			border-bottom: 1px solid fade-out($white, 0.5)
+
+			span
+				padding: 10px 0
+
+		.text
+			color: $white
+			font-size: 1.2rem
+			text-align: center
+
+			span
+				padding: 20px 25px
+				display: block
+
+.actualBackground
+	background: $base
+	margin-top: 50px
+
+	h2
+		text-align: center
+		font-weight: 100
+
+	.actual
+		grid-template-columns: repeat(2, 1fr)
+		background: fade-out($white, 0.8)
+		grid-column-gap: 20px
+		padding: 20px
+
+		.img
+			img
+				width: 100%
+
+	.btn
+		justify-self: center
+		margin: 50px 0
+
+.knoweMore
+	color: $black
+	grid-template-columns: repeat(3,1fr)
+	justify-items: center
+	.knoweMoreBox
+		grid-template-columns: min-content 1fr
+		align-items: center
+	h2
+		grid-column: span 3
+	.fas
+		padding-right: 20px
+		font-size: 2rem
+	a
+		font-size: 2rem
+		text-transform: uppercase
+		color: $black

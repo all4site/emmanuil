@@ -1,0 +1,26 @@
+article.wrapper
+	.homePartners
+		h2 наши партнеры
+		.homePartnersSlider(uk-slider="autoplay: true; autoplay-interval: 4000")
+			ul(class="uk-child-width-1-4@m uk-child-width-1-2@s").uk-slider-items.uk-child-width-1-1.uk-grid
+				.uk-panel.block.grid
+					li
+						img(src="img/logo/1.jpg", alt="")
+				.uk-panel.block.grid
+					li
+						img(src="img/logo/2.jpg", alt="")
+				.uk-panel.block.grid
+					li
+						img(src="img/logo/3.jpg", alt="")
+				.uk-panel.block.grid
+					li
+						img(src="img/logo/4.jpg", alt="")
+				.uk-panel.block.grid
+					li
+						img(src="img/logo/4.jpg", alt="")
+				.uk-panel.block.grid
+					li
+						img(src="img/logo/4.jpg", alt="")
+			.slidePagination
+				a(href="#" uk-slidenav-previous='', uk-slider-item='previous').previous
+				a(href="#" uk-slidenav-next='', uk-slider-item="next").next

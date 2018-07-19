@@ -1,0 +1,38 @@
+nav.nav.grid
+	.wrapper
+		.homeTopNav.grid
+			.homeLogoNav.grid
+				a(href="#!")
+					img(src="img/logo/logo.png", alt="")
+			.homeMenuNav.grid
+				ul
+					li
+						a(href="index.html").active гловна
+					li.hover
+						a(href="#") проекти
+						ul.menuHover
+							li
+								a(href="projectindex.html") helpua
+							li
+								a(href="projectOrfinsindex.html") orfins
+					li
+						a(href="blog.html") новини
+					li
+						a(href="contact.html") контакти
+					li
+						a(href="#") звiти
+			.btn пожертвовать
+			.homeSocialNav.grid
+				.socialConteiner.z-depth-2.hoverable.grid
+					.fab.fa-youtube
+				.socialConteiner.z-depth-2.hoverable.grid
+					.fab.fa-facebook-f
+
+	.menu(uk-toggle="target: #offcanvas-push")
+		.menu1
+		.menu2
+		.menu3
+		.menu4
+	#offcanvas-push(uk-offcanvas="mode: push")
+		.uk-offcanvas-bar
+			h1 test

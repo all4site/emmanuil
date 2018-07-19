@@ -1,0 +1,51 @@
+@import vars
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: Roboto-ex, sans-serif
+	overflow-x: hidden
+	opacity: 1
+	color: $white
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.grid
+	display: grid
+
+.wrapper
+	display: grid
+	grid-template-columns: minmax(250px, 1280px)
+	justify-content: center
+	padding: 0 10px
+
+h1
+  font-size: 3rem
+  font-weight: 400
+h2
+	font-size: 3rem - 0.3rem
+	font-weight: 400
+	text-transform: uppercase
+	margin: 50px 0 !important
+h3
+  font-size: 3rem - 0.6rem
+h4
+  font-size: 3rem - 0.9rem
+h5
+	font-size: 3rem - 1.1rem
+	text-transform: uppercase
+h6
+  font-size: 3rem - 1.4rem
+a
+	color: $accent
+
+	&:hover
+		color: lighten($accent, 10%)

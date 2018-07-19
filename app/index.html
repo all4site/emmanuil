@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- build:css css/main.min.css-->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="js/all4site-fontawesome/dist/css/fontawesome-all.css"/>
+    <link rel="stylesheet" href="js/animate.css/animate.css"/>
+    <link rel="stylesheet" href="js/all4site-ulkit/dist/css/uikit.css"/>
+    <!-- endbower-->
+    <link rel="stylesheet" href="css/main.min.css"/>
+    <!-- endbuild-->
+    <link rel="icon" href="img/favicon.png"/>
+    <title>Document</title>
+  </head>
+</html>
+<body>
+  <div class="uk-offcanvas-content">
+    <nav class="nav grid">
+      <div class="wrapper">
+        <div class="homeTopNav grid">
+          <div class="homeLogoNav grid"><a href="#!"><img src="img/logo/logo.png" alt=""/></a></div>
+          <div class="homeMenuNav grid">
+            <ul>
+              <li><a href="index.html" class="active">гловна</a></li>
+              <li class="hover"><a href="#">проекти</a>
+                <ul class="menuHover">
+                  <li><a href="projectindex.html">helpua</a></li>
+                  <li><a href="projectOrfinsindex.html">orfins</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">новини</a></li>
+              <li><a href="contact.html">контакти</a></li>
+              <li><a href="#">звiти</a></li>
+            </ul>
+          </div>
+          <div class="btn">пожертвовать</div>
+          <div class="homeSocialNav grid">
+            <div class="socialConteiner z-depth-2 hoverable grid">
+              <div class="fab fa-youtube"></div>
+            </div>
+            <div class="socialConteiner z-depth-2 hoverable grid">
+              <div class="fab fa-facebook-f"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #offcanvas-push" class="menu">
+        <div class="menu1"></div>
+        <div class="menu2"></div>
+        <div class="menu3"></div>
+        <div class="menu4"></div>
+      </div>
+      <div id="offcanvas-push" uk-offcanvas="mode: push">
+        <div class="uk-offcanvas-bar">
+          <h1>test</h1>
+        </div>
+      </div>
+    </nav>
+    <div uk-slideshow="animation: push; autoplay: true; pause-on-hover: false; autoplay-interval: 6000" class="homeSlider">
+      <ul class="uk-slideshow-items">
+        <li><img src="img/slide1.jpg" alt=""/>
+          <div class="text grid">
+            <h3>Helpua</h3>
+            <p>Комплексная помощь социально незащищенному населению</p>
+            <div class="btn">подробнее</div>
+          </div>
+        </li>
+        <li><img src="img/slide2.JPG" alt=""/>
+          <div class="text grid">
+            <h3>Helpua</h3>
+            <p>Комплексная помощь социально незащищенному населению</p>
+            <div class="btn">подробнее</div>
+          </div>
+        </li>
+        <li><img src="img/slide3.JPG" alt=""/>
+          <div class="text grid">
+            <h3>Helpua</h3>
+            <p>Комплексная помощь социально незащищенному населению</p>
+            <div class="btn">подробнее</div>
+          </div>
+        </li>
+      </ul>
+      <div class="slidePagination"><a href="#" uk-slidenav-previous="" uk-slideshow-item="previous" class="previous"></a><a href="#" uk-slidenav-next="" uk-slideshow-item="next" class="next"></a></div>
+    </div>
+    <article class="wrapper">
+      <div class="homeAboutUs grid">
+        <h2>о нас</h2>
+        <div class="textAboutUs">
+          <p>Ассоциация “Еммануил” ⎼ 	международная общественная 	организация, которая борется с 	негативными социальными явлениями 	и создает духовно-просветительский 	видеоконтент с целью 	распространения идей милосердия, 	благотворительности и 	добропорядочности.</p>
+          <p>Ассоциация является 	представителем The Christian 	Broadcasting Network (CBN) на 	территории Восточной Европы и 	Центральной Азии.</p>
+          <p>Ассоциация «Еммануил» существует 	благодаря поддержке международных 	организаций-доноров и сети 	партнеров из Украины, России, США 	и других стран. С 1991 года 	организацию возглавляет Стивен Пол 	Вебер, президент и почетный 	руководитель.</p><a href="aboutUsFullPage.html"><span>Подробнее...</span></a>
+        </div>
+        <div class="photoAboutUs"><img src="img/steve.jpg" alt=""/></div>
+      </div>
+    </article>
+    <article>
+      <div class="homeWhatDoing grid">
+        <h2>направление деятельности</h2>
+        <div class="box grid">
+          <h5>Благотворительность</h5>
+          <div class="icon"><img src="img/icon/donation.svg" alt=""/></div>
+          <p>Гуманитарная и социальная помощь детям группы риска и взрослым в сложных жизненных обстоятельствах (малоимущим, многодетным семьям, лиц с инвалидностью и преклонного возраста) отдел социальных проектов helpua.org</p>
+          <div class="list grid">
+            <div class="fas fa-check"></div><span>Помощь востоку Украины</span>
+            <div class="fas fa-check"></div><span>Обетование сироте</span>
+          </div>
+        </div>
+        <div class="box grid">
+          <h5>Благотворительность</h5>
+          <div class="icon"><img src="img/icon/donation.svg" alt=""/></div>
+          <p>Гуманитарная и социальная помощь детям группы риска и взрослым в сложных жизненных обстоятельствах (малоимущим, многодетным семьям, лиц с инвалидностью и преклонного возраста) отдел социальных проектов helpua.org</p>
+          <div class="list grid">
+            <div class="fas fa-check"></div><span>Помощь востоку Украины</span>
+            <div class="fas fa-check"></div><span>Обетование сироте</span>
+          </div>
+        </div>
+        <div class="box grid">
+          <h5>Благотворительность</h5>
+          <div class="icon"><img src="img/icon/donation.svg" alt=""/></div>
+          <p>Гуманитарная и социальная помощь детям группы риска и взрослым в сложных жизненных обстоятельствах (малоимущим, многодетным семьям, лиц с инвалидностью и преклонного возраста) отдел социальных проектов helpua.org</p>
+          <div class="list grid">
+            <div class="fas fa-check"></div><span>Помощь востоку Украины</span>
+            <div class="fas fa-check"></div><span>Обетование сироте</span>
+          </div>
+        </div>
+        <div class="box grid">
+          <h5>Благотворительность</h5>
+          <div class="icon"><img src="img/icon/donation.svg" alt=""/></div>
+          <p>Гуманитарная и социальная помощь детям группы риска и взрослым в сложных жизненных обстоятельствах (малоимущим, многодетным семьям, лиц с инвалидностью и преклонного возраста) отдел социальных проектов helpua.org</p>
+          <div class="list grid">
+            <div class="fas fa-check"></div><span>Помощь востоку Украины</span>
+            <div class="fas fa-check"></div><span>Обетование сироте</span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="homeAchievments grid">
+        <h2>достижения</h2>
+        <div class="homeAchievmentsContainer grid">
+          <div class="wrapper">
+            <div class="homeAchievmentsCounter grid">
+              <div class="block grid">
+                <h5>бенефициары</h5><span data-count="1712569" class="counter-value"></span>
+              </div>
+              <div class="block grid">
+                <h5>программы</h5><span data-count="801511" class="counter-value"></span>
+              </div>
+              <div class="block grid">
+                <h5>косультации</h5><span data-count="1500" class="counter-value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homeAchievmentsDonateContainer grid">
+          <div class="wrapper">
+            <div class="homeAchievmentsDonate grid">
+              <div class="homeTextAchievments"><span>Богу не нужен твой дар, но тебе нужно давать. В этом есть благословение и финансовая стабильность.</span><span>Библия говорит: “Занимаясь благотворительностью, ты даешь взаймы Господу”.</span><br/><br/><span>Стив Вебер,</span><br/><span>Президент Ассоциации «Еммануил»</span></div>
+              <div class="btn-large pulse">пожертвовать</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="wrapper">
+      <div class="homePartners">
+        <h2>наши партнеры</h2>
+        <div uk-slider="autoplay: true; autoplay-interval: 4000" class="homePartnersSlider">
+          <ul class="uk-child-width-1-4@m uk-child-width-1-2@s uk-slider-items uk-child-width-1-1 uk-grid">
+            <div class="uk-panel block grid">
+              <li><img src="img/logo/1.jpg" alt=""/></li>
+            </div>
+            <div class="uk-panel block grid">
+              <li><img src="img/logo/2.jpg" alt=""/></li>
+            </div>
+            <div class="uk-panel block grid">
+              <li><img src="img/logo/3.jpg" alt=""/></li>
+            </div>
+            <div class="uk-panel block grid">
+              <li><img src="img/logo/4.jpg" alt=""/></li>
+            </div>
+            <div class="uk-panel block grid">
+              <li><img src="img/logo/4.jpg" alt=""/></li>
+            </div>
+            <div class="uk-panel block grid">
+              <li><img src="img/logo/4.jpg" alt=""/></li>
+            </div>
+          </ul>
+          <div class="slidePagination"><a href="#" uk-slidenav-previous="" uk-slider-item="previous" class="previous"></a><a href="#" uk-slidenav-next="" uk-slider-item="next" class="next"></a></div>
+        </div>
+      </div>
+    </article>
+    <footer class="grid">
+      <div class="wrapper">
+        <div class="footer grid">
+          <div class="footerContact grid">
+            <h5>контакты</h5><span class="contactColOne">адрес:</span><span class="contactColTwo">г.Киев, ул. Б.Васильковская 131-А</span><span class="contactColOne">тел:</span><span class="contactColTwo">+38 (044) 205 55 22</span><span class="contactColOne">email:</span><span class="contactColTwo">info@emmanuil.tv</span>
+          </div>
+          <div class="hr one"></div>
+          <div class="footerSubscribe grid">
+            <h5>подписаться на новости</h5>
+            <div class="subscribe grid">
+              <div class="far fa-user-circle"></div>
+              <div class="text name"><span>name</span></div>
+            </div>
+            <div class="subscribe grid">
+              <div class="far fa-envelope"></div>
+              <div class="text email"><span>email</span></div>
+            </div>
+            <div class="btn grid">отправить</div>
+          </div>
+          <div class="hr two"></div>
+          <div class="footerOther grid">
+            <h5>разное</h5>
+            <div class="fas fa-exclamation"></div><span>Персональные данны</span>
+            <div class="fas fa-exclamation"></div><span>Карта сайта</span>
+            <div class="fas fa-exclamation"></div><span>Политика конфиденциальности</span>
+            <div class="footerSocialIcon grid">
+              <div class="social grid hoverable z-depth-2">
+                <div class="fab fa-facebook-f"></div>
+              </div>
+              <div class="social grid hoverable z-depth-2">
+                <div class="fab fa-youtube"></div>
+              </div>
+              <div class="social grid hoverable z-depth-2">
+                <div class="fab fa-instagram"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom grid"><span>@ 2018 Все права защищены</span></div>
+    </footer>
+  </div>
+  <!-- build:js js/main.min.js-->
+  <!-- bower:js-->
+  <script src="js/jquery/dist/jquery.js"></script>
+  <script src="js/materialize/dist/js/materialize.js"></script>
+  <script src="js/all4site-ulkit/dist/js/uikit.js"></script>
+  <script src="js/all4site-ulkit/dist/js/uikit-icons.js"></script>
+  <!-- endbower-->
+  <script src="js/main.js"></script>
+  <!-- endbuild-->
+</body>

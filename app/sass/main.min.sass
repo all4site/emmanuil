@@ -1,0 +1,500 @@
+@import fonts
+@import base
+@import vars
+@import ../js/materialize/sass/materialize
+
+// @import ../js/uikit/src/scss/uikit
+//menuHover
+.hover
+	position: relative
+
+.menuHover
+	position: absolute
+	background: $base
+	left: 10%
+	width: 150%
+	z-index: 1
+	padding-top: 37px
+	display: none
+	transition: all 5s
+
+	li
+		float: none !important
+		padding: 10px 10px
+
+	li:nth-of-type(1)
+		border-top: 1px solid $white
+
+.hover:hover > .menuHover
+	display: block
+
+//PULCE
+.pulse::before
+	animation: pulse-animation 1.5s cubic-bezier(0.24, 0, 0.38, 1) infinite
+
+// BUTTON
+.btn
+	background: $accent
+	border-radius: 5px
+
+	&:hover
+		background: lighten($accent, 10%)
+
+//Subscribe menu
+.subscribeActive
+	transform: translateY(-80%) scale(0.9)
+	color: fade-out($white, 0.5)
+
+.subscribeActiveImg
+	color: fade-out($white, 0.7) !important
+
+// MENU
+.nav
+	background: $base
+	min-height: 100px
+	position: relative
+
+.homeTopNav
+	grid-template-columns: 1.5fr minmax(max-content, 1fr) minmax(min-content, 1fr) min-content
+	align-items: center
+	grid-column-gap: 10px
+
+	.btn
+		max-width: 220px
+		background: $accent
+
+		&:hover
+			background: lighten($accent, 10%)
+
+.homeLogoNav
+	max-width: 200px
+
+	img
+		width: 100%
+		height: auto
+
+.homeMenuNav
+	justify-content: center
+
+	ul
+		li
+			float: left
+			text-transform: uppercase
+
+			&:hover
+				color: darken($white, 30%)
+
+			.active
+				border-bottom: 1px solid $white
+
+			a
+				color: $white
+				padding: 10px
+				transition: color 0.2s
+
+				&:hover
+					color: $accent
+
+.homeSocialNav
+	grid-template-columns: repeat(2, min-content)
+	grid-column-gap: 20px
+
+	.socialConteiner
+		width: 50px
+		height: 50px
+		border: 1px solid $white
+		border-radius: 100%
+		justify-content: center
+		align-content: center
+		transition: transform 0.2s
+
+.menu
+	display: none
+	cursor: pointer
+	position: absolute
+	left: 3%
+	margin-top: 30px
+	top: 0
+	z-index: 10
+
+	.menu1
+		width: 50px
+		height: 1px
+		background: #C50
+
+	.menu2
+		width: 50px
+		height: 1px
+		background: #C50
+		margin-top: 10px
+
+	.menu3
+		width: 50px
+		height: 1px
+		background: #C50
+		margin-top: 10px
+
+	.menu4
+		width: 50px
+		height: 1px
+		background: #C50
+		margin-top: 10px
+
+// END MENU
+
+// SLIDER
+.homeSlider
+	position: relative
+
+	.uk-slideshow-items
+		max-height: 850px
+
+	li
+		overflow: hidden
+
+		img
+			filter: blur(4px)
+			transform: scale(1.02)
+			background-position: center
+			background-size: cover
+			width: 100%
+
+	.text
+		position: absolute
+		bottom: 0
+		margin-bottom: 5%
+		left: 20%
+		grid-template-columns: 1fr
+		justify-items: center
+		text-align: center
+		width: 350px
+		height: 250px
+		background: fade-out($white, 0.5)
+		color: $base
+		overflow: hidden
+		padding-bottom: 50px
+
+.slidePagination
+	position: absolute
+	top: 50%
+	width: 100%
+
+	.previous
+		left: 10px
+		position: absolute
+		color: $base
+
+	.next
+		right: 10px
+		position: absolute
+		color: $base
+
+// END SLIDER
+
+// START ABOUTUS
+.homeAboutUs
+	color: $black
+	grid-template-columns: 3fr 1fr
+	grid-column-gap: 20px
+
+	h2
+		grid-column: span 2
+		text-align: center
+		text-transform: uppercase
+
+.textAboutUs
+	span
+		float: right
+		margin-right: 30px
+		color: $accent
+
+.photoAboutUs
+	img
+		border-radius: 100%
+		width: 100%
+		height: auto
+		min-width: 200px
+		max-width: 300px
+
+// END ABOUTUS
+
+//START WHATDOING
+.homeWhatDoing
+	background: url("../img/bgdonate.jpg")
+	color: $black
+	grid-template-columns: repeat(4, minmax(260px, 400px))
+	grid-column-gap: 20px
+	margin-top: 50px
+	justify-content: center
+	position: relative
+	overflow: hidden
+	background-position: center
+	background-size: cover
+
+	&::after
+		content: ""
+		position: absolute
+		width: 100%
+		height: 100%
+		background: url("../img/bgdonate.jpg")
+		filter: blur(3px)
+		background-position: center
+		background-size: cover
+
+	&::before
+		content: ""
+		position: absolute
+		width: 100%
+		height: 100%
+		background: $white
+		opacity: 0.5
+		z-index: 1
+
+	h2
+		grid-column: span 4
+		text-align: center
+		text-transform: uppercase
+		margin: 50px 0
+		z-index: 1
+
+	.box
+		background: fade-out($base, 0.2)
+		color: $white
+		grid-column: span 1
+		padding: 50px 20px
+		position: relative
+		z-index: 1
+		justify-content: center
+
+		.icon
+			justify-self: center
+
+		img
+			width: 100px
+			height: 100px
+			margin: 30px 0
+
+		h5
+			text-align: center
+			font-size: 1.54rem
+
+	.list
+		grid-template-columns: min-content 1fr
+		grid-column-gap: 20px
+		align-items: center
+
+//END WHATDOING
+
+//START ACHIEVMENTS
+.homeAchievments
+	color: $black
+
+	h2
+		text-align: center
+		text-transform: uppercase
+		margin: 50px 0
+
+	.homeAchievmentsContainer
+		background: $base
+		justify-items: center
+		padding: 40px 0
+
+		.homeAchievmentsCounter
+			grid-template-columns: repeat(3, 1fr)
+
+		.block
+			justify-items: center
+
+		h5
+			color: $white
+			text-transform: uppercase
+
+		span
+			color: $counter
+			font-size: 2rem
+
+	.homeAchievmentsDonateContainer
+		background: url("../img/bgdonate1.jpg")
+		min-height: 400px
+		overflow: hidden
+		justify-content: center
+		position: relative
+		background-position: center
+		background-size: cover
+
+		&::before
+			content: ""
+			background: url("../img/bgdonate1.jpg")
+			width: 100%
+			height: 100%
+			position: absolute
+			filter: blur(3px)
+			background-position: center
+			background-size: cover
+			transform: scale(1.01)
+
+		&::after
+			content: ""
+			width: 100%
+			height: 100%
+			position: absolute
+			background: $white
+			opacity: 0.2
+			background-position: center
+			background-size: cover
+
+	.homeAchievmentsDonate
+		z-index: 1
+
+		.homeTextAchievments
+			text-align: center
+			margin-top: 50px
+			font-size: 1.5rem
+
+		.btn-large
+			margin: 40px 0
+			justify-self: center
+
+//END ACHIEVMENTS
+
+//START PARTNERS
+.homePartnersSlider
+	position: relative
+
+.homePartners
+	color: $black
+	position: relative
+
+	h2
+		text-align: center
+		text-transform: uppercase
+		margin: 50px 0
+
+	img
+		max-width: 100%
+
+	.block
+		justify-content: center
+		align-items: center
+
+	.slidePagination
+		.previous
+			color: $base
+
+		.next
+			color: $base
+
+//END PARTNERS
+//START FOOTER
+footer
+	margin-top: 50px
+	background: $base
+
+	.footer
+		margin: 50px 0
+		padding: 50px 0
+		color: $white
+		background: fade-out($white, 0.9)
+		grid-template-columns: 1fr min-content 1fr min-content 1fr
+
+		h5
+			text-align: center
+
+		.hr
+			width: 1px
+			background: fade-out($base, 0.7)
+			margin: 0 50px
+
+		.footerContact
+			grid-template-columns: min-content 1fr
+			grid-column-gap: 20px
+			grid-row-gap: 40px
+
+			h5
+				grid-column: span 2
+
+			.contactColOne
+				text-transform: uppercase
+				color: fade-out($white, 0.5)
+				padding-left: 20px
+
+		.footerOther
+			grid-template-columns: min-content 1fr
+			grid-column-gap: 20px
+			grid-row-gap: 40px
+
+			h5
+				grid-column: span 2
+
+			.footerSocialIcon
+				grid-column: span 2
+				grid-template-columns: repeat(3, min-content)
+				grid-column-gap: 20px
+
+				.social
+					border-radius: 100%
+					background: $white
+					width: 50px
+					height: 50px
+					justify-content: center
+					align-content: center
+					color: $accent
+
+			.fas
+				color: fade-out($white, 0.5)
+
+		.footerSubscribe
+			grid-template-columns: 1fr
+			grid-row-gap: 40px
+
+			.far
+				color: fade-out($white, 0.5)
+				font-size: 1.4rem
+				transition: color 0.2s ease-out
+
+			.subscribe
+				grid-template-columns: min-content 1fr
+				grid-column-gap: 20px
+				transition: all 1s
+
+				.name
+					border-bottom: 1px solid $white
+
+				.email
+					border-bottom: 1px solid $white
+
+				.far
+					align-self: center
+
+				.text
+					align-self: center
+					padding-bottom: 5px
+
+					span
+						display: inline-block
+						transition: all 1s
+						transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out
+
+		.btn
+			justify-self: center
+			background: $accent
+
+			&:hover
+				background: lighten($accent, 10%)
+
+	.footerBottom
+		background: fade-out($accent, 0.8)
+		text-align: center
+		min-height: 50px
+		align-content: center
+		font-weight: 100
+		font-size: 1rem
+
+@import project
+@import contact
+@import aboutUsFullPage
+@import blog
+
+//END FOOTER
+// ADAPTIVE
+@import media

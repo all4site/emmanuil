@@ -1,0 +1,252 @@
+@import vars
+
+// ==========  Desktop First  ==========
+
+// Large Devices, Wide Screens
+@media only screen and (max-width: 1200px)
+	.homeWhatDoing
+		grid-template-columns: repeat(2, minmax(260px, 400px))
+		grid-row-gap: 20px
+
+		h2
+			grid-column: span 2
+
+	//FOOTER
+	footer
+		.footer
+			grid-template-rows: 1fr min-content 1fr
+			grid-template-columns: 1fr min-content 1fr
+			align-content: center
+			padding: 50px 0
+			white-space: nowrap
+
+			h5
+				text-align: left
+
+			.footerContact
+				grid-row: 1
+				grid-column: 1
+				justify-self: center
+
+				.contactColOne
+					padding: 0
+
+			.one
+				grid-row: 1
+				grid-column: 2
+
+			.footerOther
+				grid-row: 1
+				grid-column: 3
+				justify-self: center
+
+			.two
+				grid-row: 2
+				grid-column: span 3
+				width: 80%
+				height: 1px
+				margin: 50px 0
+				justify-self: center
+
+			.footerSubscribe
+				grid-row: 3
+				grid-column: span 3
+				justify-self: center
+				min-width: 60%
+
+				h5
+					text-align: center
+
+// Medium Devices, Desktops
+@media only screen and (max-width: 992px)
+	// topNavMenu
+	.homeLogoNav
+		display: none
+
+	.homeTopNav
+		grid-template-columns: max-content min-content min-content
+
+	//projectaccordeon
+	.projectaccordeon
+		.collapsible
+			.collapsible-body
+				grid-template-columns: 1fr
+
+				.img:nth-of-type(1)
+					grid-row: 1
+
+				p:nth-of-type(1)
+					grid-row: 2
+
+				.img:nth-of-type(2)
+					grid-row: 3
+
+				p:nth-of-type(2)
+					grid-row: 4
+
+	//doingBlockWrapper
+	.doingBlockWrapper
+		grid-template-columns: repeat(2, minmax(240px, 305px))
+		grid-row-gap: 20px
+		justify-content: center
+
+	//actual
+	.actualBackground
+		.actual
+			grid-template-columns: 1fr
+
+			.img
+				grid-row: 1
+
+	//aboutUsFullPage
+	.aboutUsFullPage
+
+		.topbox
+			grid-template-columns: 1fr
+			.img
+				justify-content: center
+
+//  Small Devices, Tablets
+@media only screen and (max-width: 768px)
+	// topNavMenu
+	.nav
+		.wrapper
+			display: none
+
+	.menu
+		display: grid
+
+	//SLIDER
+	.homeSlider
+		display: none
+
+	// ABOUT US
+	.homeAboutUs
+		grid-template-columns: 1fr
+		justify-items: center
+
+		// grid-template-rows: 1fr 1fr
+		h2
+			grid-column: 1
+
+	.photoAboutUs
+		grid-row: 2
+
+	//WHATDOING
+	.homeWhatDoing
+		grid-template-columns: repeat(1, minmax(100px, 400px))
+		grid-row-gap: 20px
+
+		h2
+			grid-column: 1
+
+	//START AchievmentsDonate
+	.homeAchievments .homeAchievmentsContainer .homeAchievmentsCounter
+		grid-template-columns: minmax(250px, 320px)
+		grid-row-gap: 20px
+		justify-content: center
+
+		.block
+			background: fade-out($accent, 0.5)
+			padding: 20px 0
+
+	//END AchievmentsDonate
+
+	//FOOTER
+	footer
+		.footer
+			grid-template-columns: 1fr
+			grid-template-rows: 1fr min-content 1fr min-content 1fr
+			white-space: normal
+
+			.footerContact
+				grid-row: 1
+				grid-column: 1
+
+				h5
+					text-align: center
+
+			.one
+				grid-row: 2
+				grid-column: 1
+				width: 100%
+				height: 1px
+				margin: 50px 0
+
+			.footerSubscribe
+				grid-row: 5
+				grid-column: 1
+
+			.two
+				grid-row: 4
+				grid-column: 1
+				width: 100%
+
+			.footerOther
+				grid-row: 3
+				grid-column: 1
+
+				h5
+					text-align: center
+
+	//doingBlockWrapper
+	.doingBlockWrapper
+		grid-template-columns: minmax(240px, 305px)
+
+	//knoweMore
+	.knoweMore
+		grid-template-columns: 1fr
+
+		.knoweMoreBox
+			grid-template-columns: min-content 200px
+			grid-template-rows: 1fr 1fr
+
+		h2
+			grid-column: 1
+
+	//Contact
+	.contactPage
+		grid-template-columns: 1fr
+		grid-row-gap: 50px
+
+		.contactPlace
+			grid-row: 2
+
+		.contactWork
+			grid-row-gap: 20px
+
+//Extra Small Devices, Phones
+@media only screen and (max-width: 480px)
+	.homeWhatDoing
+		grid-template-columns: minmax(220px, 350px)
+
+		.box
+			margin: 0 10px
+
+	h2
+		font-size: 3rem - 1rem
+		margin: 30px 0 !important
+
+	footer
+		.footer
+			padding: 50px 10px
+
+//  Custom, iPhone Retina
+// @media only screen and (max-width: 320px)
+
+// ==========  Mobile First  ==========
+
+//  Custom, iPhone Retina
+// @media only screen and (min-width: 320px)
+
+//  Extra Small Devices, Phones
+// @media only screen and (min-width: 480px)
+
+//  Small Devices, Tablets
+// @media only screen and (min-width: 768px)
+
+//  Medium Devices, Desktops
+// @media only screen and (min-width: 992px)
+
+//  Large Devices, Wide Screens
+// @media only screen and (min-width: 1200px)

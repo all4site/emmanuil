@@ -1,0 +1,48 @@
+.projectaccordeon .collapsible-header {
+  background: #16B3E8;
+  border-bottom: 1px solid #128fb9; }
+
+.donate {
+  background: url("../img/orfinsbackground.jpg");
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px; }
+  .donate::after {
+    content: "";
+    background: url("../img/orfinsbackground.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01); }
+  .donate::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1; }
+
+.doingBlockWrapper .doingBlock {
+  background: #EB4F97; }
+
+.doingBlockWrapper .doingBlock .counter {
+  color: #3A8509; }
+
+.actualBackground {
+  background: #16B3E8; }
+
+.btn, .btn-large {
+  background: #FDB414; }
+
+.btn:hover, .btn-large:hover {
+  background: #fdc447; }

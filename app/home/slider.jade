@@ -1,0 +1,23 @@
+.homeSlider(uk-slideshow="animation: push; autoplay: true; pause-on-hover: false; autoplay-interval: 6000")
+	ul.uk-slideshow-items
+		li
+			img(src="img/slide1.jpg", alt="")
+			.text.grid
+				h3 Helpua
+				p Комплексная помощь социально незащищенному населению
+				.btn подробнее
+		li
+			img(src="img/slide2.JPG", alt="")
+			.text.grid
+				h3 Helpua
+				p Комплексная помощь социально незащищенному населению
+				.btn подробнее
+		li
+			img(src="img/slide3.JPG", alt="")
+			.text.grid
+				h3 Helpua
+				p Комплексная помощь социально незащищенному населению
+				.btn подробнее
+	.slidePagination
+		a(href="#" uk-slidenav-previous='', uk-slideshow-item='previous').previous
+		a(href="#" uk-slidenav-next='', uk-slideshow-item="next").next

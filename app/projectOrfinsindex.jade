@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		// build:css css/main.min.css
+		// bower:css
+		link(rel='stylesheet', href='js/all4site-fontawesome/dist/css/fontawesome-all.css')
+		link(rel='stylesheet', href='js/animate.css/animate.css')
+		link(rel='stylesheet', href='js/all4site-ulkit/dist/css/uikit.css')
+		// endbower
+		link(rel="stylesheet", href="css/main.min.css")
+		link(rel="stylesheet", href="css/orfinsColor.css")
+		// endbuild
+		link(rel="icon", href="img/favicon.png")
+		title Document
+body
+	.uk-offcanvas-content
+		include home/menu
+		include orfins/projecOrfinstvideo
+		include orfins/projecOrfinstabout
+		include orfins/projecOrfinstaccordeon
+		include orfins/projecOrfinstdonate
+		include orfins/projecOrfinstdoing
+		include orfins/projecOrfinstactual
+		include orfins/projecOrfinstknowmore
+		include home/footer
+
+	// build:js js/main.min.js
+	// bower:js
+	script(src='js/jquery/dist/jquery.js')
+	script(src='js/materialize/dist/js/materialize.js')
+	script(src='js/all4site-ulkit/dist/js/uikit.js')
+	script(src='js/all4site-ulkit/dist/js/uikit-icons.js')
+	// endbower
+	//- script(src="js/main.js")
+	// endbuild
